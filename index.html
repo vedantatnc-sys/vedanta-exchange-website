@@ -11,6 +11,19 @@
   <title>Vedanta Exchange & Consultancy | Technical Consultancy & Trading</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Premium photographic hero image */
+    .hero{position:relative;overflow:hidden;background:#08243d;}
+    .hero-image{position:absolute!important;inset:0 0 0 42%!important;width:auto!important;height:auto!important;background-image:url("hero-port.jpg")!important;background-size:cover!important;background-position:center center!important;}
+    .hero-image::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,36,61,.98) 0%,rgba(8,36,61,.88) 22%,rgba(8,36,61,.38) 48%,rgba(8,36,61,.02) 72%);z-index:1;}
+    .hero-image > *{display:none!important;}
+    .hero-content{position:relative;z-index:2;}
+    @media (max-width: 900px){
+      .hero{min-height:760px;}
+      .hero-image{inset:42% 0 0 0!important;}
+      .hero-image::before{background:linear-gradient(180deg,rgba(8,36,61,.08),rgba(8,36,61,.72) 70%,rgba(8,36,61,.9));}
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
