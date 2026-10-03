@@ -1,17 +1,9 @@
-# Vedanta Exchange & Consultancy
+# Vedanta Exchange & Consultancy website
 
-Responsive static business website for **Vedanta Exchange & Consultancy**.
+Static, responsive website for Vedanta Exchange & Consultancy, Kerala, India.
 
-Business focus: Technical Consultancy & Trading  
-Location: Kerala, India  
-Email: vedanta.tnc@gmail.com  
-Domain: vedantatnc.com
+## Publish on GitHub Pages
+Upload these files to the repository root and commit to the `main` branch. The existing GitHub Pages custom domain and DNS settings do not need to change.
 
-## Files
-- index.html
-- styles.css
-- script.js
-- favicon.svg
-
-## Publishing
-The site is ready for static hosting such as GitHub Pages. Upload these files to a repository, enable GitHub Pages, add `vedantatnc.com` as the custom domain, then configure the DNS records shown by GitHub. Enable HTTPS once the certificate is available.
+## Contact
+vedanta.tnc@gmail.com
