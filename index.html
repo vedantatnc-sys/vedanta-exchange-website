@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#08243d">
-  <meta name="description" content="Vedanta Exchange & Consultancy provides practical technical consultancy, trading, sourcing and project support .">
+  <meta name="description" content="Vedanta Exchange & Consultancy provides practical technical consultancy, trading, sourcing and project support.">
   <meta property="og:title" content="Vedanta Exchange & Consultancy | Technical Consultancy & Trading">
   <meta property="og:description" content="Practical expertise. Reliable business. Technical consultancy and trading solutions for businesses.">
   <meta property="og:type" content="website">
@@ -12,172 +12,95 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Premium photographic hero image */
     .hero{position:relative;overflow:hidden;background:#08243d;}
     .hero-image{position:absolute!important;inset:0 0 0 42%!important;width:auto!important;height:auto!important;background-image:url("hero-port.jpg")!important;background-size:cover!important;background-position:center center!important;}
     .hero-image::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,36,61,.98) 0%,rgba(8,36,61,.88) 22%,rgba(8,36,61,.38) 48%,rgba(8,36,61,.02) 72%);z-index:1;}
     .hero-image > *{display:none!important;}
     .hero-content{position:relative;z-index:2;}
-    @media (max-width: 900px){
-      .hero{min-height:760px;}
-      .hero-image{inset:42% 0 0 0!important;}
-      .hero-image::before{background:linear-gradient(180deg,rgba(8,36,61,.08),rgba(8,36,61,.72) 70%,rgba(8,36,61,.9));}
-    }
+    @media (max-width: 900px){.hero{min-height:760px}.hero-image{inset:42% 0 0 0!important}.hero-image::before{background:linear-gradient(180deg,rgba(8,36,61,.08),rgba(8,36,61,.72) 70%,rgba(8,36,61,.9));}}
+    .premium-services{padding:0;background:#f4f8fb;overflow:hidden}
+    .premium-services-banner{position:relative!important;height:250px!important;min-height:250px!important;background:#08243d!important;overflow:hidden!important}
+    .premium-services-banner-image{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;background-size:62% 100%!important;background-repeat:no-repeat!important;background-position:right center!important;background-color:#08243d!important;background-image:url("services-assets/services-banner-clean.jpg")!important}
+    .premium-services-banner-content{position:relative!important;z-index:2!important;height:250px!important;min-height:250px!important;display:flex!important;align-items:center!important}
+    .premium-services-banner .eyebrow{color:#18c4cf!important;margin-bottom:10px!important}
+    .premium-services-banner h2{color:#fff!important;font-size:clamp(42px,5vw,66px);line-height:1;margin:0 0 14px;font-weight:750}
+    .premium-services-banner h2 em{font-style:normal;color:#19c4c8!important}
+    .premium-services-banner p:last-child{color:rgba(255,255,255,.88)!important;font-size:18px;margin:0;max-width:540px}
+    .premium-services-body{padding-top:28px;padding-bottom:52px}
+    .premium-services-topline{display:flex;justify-content:flex-end;align-items:center;margin-bottom:22px}
+    .premium-services-topline a{color:#078aa4;font-weight:700;text-decoration:none;font-size:15px}
+    .premium-services-topline a b{font-size:20px;margin-left:5px}
+    .premium-service-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:22px}
+    .premium-service-card{grid-column:span 2;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(8,36,61,.08);border:1px solid rgba(8,36,61,.05);transition:transform .2s ease,box-shadow .2s ease}
+    .premium-service-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(8,36,61,.13)}
+    .premium-service-card.premium-service-wide{grid-column:span 3}
+    .premium-service-copy{padding:18px 24px 18px;display:grid;grid-template-columns:58px 1fr;gap:16px;min-height:202px}
+    .premium-service-icon{width:58px;height:58px;border-radius:50%;background:#e1f5f8;color:#087d98;display:flex;align-items:center;justify-content:center;font-size:27px;font-weight:700}
+    .premium-service-card h3{color:#092d50;font-size:20px;line-height:1.2;margin:7px 0 10px}
+    .premium-rule{display:block;width:28px;height:2px;background:#12aabd;margin-bottom:14px}
+    .premium-service-card p{color:#4d6479;font-size:14.5px;line-height:1.5;margin:0 0 12px}
+    .premium-service-card a{color:#078aa4;font-weight:700;text-decoration:none;font-size:14px}
+    .premium-service-card a b{font-size:18px;margin-left:3px}
+    .premium-service-card img{display:block;width:100%;height:145px;object-fit:cover}
+    .premium-service-card.premium-service-wide img{height:122px}
+    .premium-service-values{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;align-items:center;gap:18px;padding:32px 20px 0;color:#123d5e;font-size:13px;font-weight:700}
+    .premium-service-values div{display:flex;align-items:center;gap:10px;justify-content:center;white-space:nowrap}
+    .premium-service-values b{width:34px;height:34px;border-radius:50%;background:#e1f5f8;color:#087d98;display:inline-flex;align-items:center;justify-content:center;font-size:17px}
+    .premium-service-values i{width:1px;height:22px;background:#a9c8d2}
+    @media(max-width:900px){.premium-services-banner,.premium-services-banner-content{height:300px!important;min-height:300px!important}.premium-services-banner-image{background-size:cover!important;background-position:center!important}.premium-service-grid{grid-template-columns:repeat(2,1fr)}.premium-service-card,.premium-service-card.premium-service-wide{grid-column:span 1}.premium-service-values{grid-template-columns:1fr 1fr;gap:18px}.premium-service-values i{display:none}}
+    @media(max-width:620px){.premium-services-banner,.premium-services-banner-content{height:290px!important;min-height:290px!important}.premium-services-banner-content{padding-top:30px;padding-bottom:30px}.premium-service-grid{grid-template-columns:1fr}.premium-service-card,.premium-service-card.premium-service-wide{grid-column:span 1}.premium-service-copy{min-height:auto;padding:18px 18px 16px;grid-template-columns:48px 1fr;gap:12px}.premium-service-icon{width:48px;height:48px;font-size:22px}.premium-service-card h3{font-size:18px}.premium-service-card img,.premium-service-card.premium-service-wide img{height:135px}.premium-service-values{grid-template-columns:1fr;padding-left:0;padding-right:0}}
   </style>
-
-  <style>
-    /* Premium Services section */
-    .premium-services{padding:0;background:#f4f8fb;overflow:hidden;}
-    .premium-services-banner{position:relative!important;height:250px!important;min-height:250px!important;background:#08243d!important;overflow:hidden!important;}
-    .premium-services-banner-image{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;background-image:linear-gradient(90deg,rgba(8,36,61,.98) 0%,rgba(8,36,61,.86) 34%,rgba(8,36,61,.25) 72%,rgba(8,36,61,.08)),url("services-assets/services-banner-clean.jpg")!important;background-size:cover!important;background-position:center!important;}
-    .premium-services-banner-content{position:relative!important;z-index:2!important;height:250px!important;min-height:250px!important;display:flex!important;align-items:center!important;}
-    .premium-services-banner .eyebrow{color:#18c4cf!important;margin-bottom:10px!important;}
-    .premium-services-banner h2{color:#fff!important;font-size:clamp(42px,5vw,66px);line-height:1;margin:0 0 14px;font-weight:750;}
-    .premium-services-banner h2 em{font-style:normal;color:#19c4c8!important;}
-    .premium-services-banner p:last-child{color:rgba(255,255,255,.88)!important;font-size:18px;margin:0;max-width:540px;}
-    .premium-services-body{padding-top:28px;padding-bottom:52px;}
-    .premium-services-topline{display:flex;justify-content:flex-end;align-items:center;margin-bottom:22px;}
-    .premium-services-topline a{color:#078aa4;font-weight:700;text-decoration:none;font-size:15px;}
-    .premium-services-topline a b{font-size:20px;margin-left:5px;}
-    .premium-service-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:22px;}
-    .premium-service-card{grid-column:span 2;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(8,36,61,.08);border:1px solid rgba(8,36,61,.05);transition:transform .2s ease,box-shadow .2s ease;}
-    .premium-service-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(8,36,61,.13);}
-    .premium-service-card.premium-service-wide{grid-column:span 3;}
-    .premium-service-copy{padding:18px 24px 18px;display:grid;grid-template-columns:58px 1fr;gap:16px;min-height:202px;}
-    .premium-service-icon{width:58px;height:58px;border-radius:50%;background:#e1f5f8;color:#087d98;display:flex;align-items:center;justify-content:center;font-size:27px;font-weight:700;}
-    .premium-service-card h3{color:#092d50;font-size:20px;line-height:1.2;margin:7px 0 10px;}
-    .premium-rule{display:block;width:28px;height:2px;background:#12aabd;margin-bottom:14px;}
-    .premium-service-card p{color:#4d6479;font-size:14.5px;line-height:1.5;margin:0 0 12px;}
-    .premium-service-card a{color:#078aa4;font-weight:700;text-decoration:none;font-size:14px;}
-    .premium-service-card a b{font-size:18px;margin-left:3px;}
-    .premium-service-card img{display:block;width:100%;height:145px;object-fit:cover;}
-    .premium-service-card.premium-service-wide img{height:122px;}
-    .premium-service-values{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;align-items:center;gap:18px;padding:32px 20px 0;color:#123d5e;font-size:13px;font-weight:700;}
-    .premium-service-values div{display:flex;align-items:center;gap:10px;justify-content:center;white-space:nowrap;}
-    .premium-service-values b{width:34px;height:34px;border-radius:50%;background:#e1f5f8;color:#087d98;display:inline-flex;align-items:center;justify-content:center;font-size:17px;}
-    .premium-service-values i{width:1px;height:22px;background:#a9c8d2;}
-    @media(max-width:900px){
-      .premium-services-banner,.premium-services-banner-content{height:300px!important;min-height:300px!important;}
-      .premium-services-banner-image{background-position:60% center;}
-      .premium-service-grid{grid-template-columns:repeat(2,1fr);}
-      .premium-service-card,.premium-service-card.premium-service-wide{grid-column:span 1;}
-      .premium-service-values{grid-template-columns:1fr 1fr;gap:18px;}
-      .premium-service-values i{display:none;}
-    }
-    @media(max-width:620px){
-      .premium-services-banner,.premium-services-banner-content{height:290px!important;min-height:290px!important;}
-      .premium-services-banner-content{padding-top:30px;padding-bottom:30px;}
-      .premium-service-grid{grid-template-columns:1fr;}
-      .premium-service-card,.premium-service-card.premium-service-wide{grid-column:span 1;}
-      .premium-service-copy{min-height:auto;padding:18px 18px 16px;grid-template-columns:48px 1fr;gap:12px;}
-      .premium-service-icon{width:48px;height:48px;font-size:22px;}
-      .premium-service-card h3{font-size:18px;}
-      .premium-service-card img,.premium-service-card.premium-service-wide img{height:135px;}
-      .premium-service-values{grid-template-columns:1fr;padding-left:0;padding-right:0;}
-    }
-  </style>
-
-<style id="services-banner-cleanup">
-/* Keep the banner photo on the right so any embedded artwork/text in the source image does not duplicate the HTML heading. */
-.premium-services-banner-image{
-  background-size:62% 100%!important;
-  background-repeat:no-repeat!important;
-  background-position:right center!important;
-  background-color:#08243d!important;
-  background-image:linear-gradient(90deg,rgba(8,36,61,0) 0%,rgba(8,36,61,0) 100%),url("services-assets/services-banner-clean.jpg")!important;
-}
-@media (max-width:900px){
-  .premium-services-banner-image{background-size:cover!important;background-position:center!important;}
-}
-</style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Vedanta Exchange and Consultancy home">
-        <span class="brand-mark">V</span><span class="brand-copy"><strong>Vedanta</strong><small>EXCHANGE &amp; CONSULTANCY</small></span>
-      </a>
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#trading">Markets</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
-        <a class="nav-cta" href="mailto:vedanta.tnc@gmail.com?subject=Enquiry%20for%20Vedanta%20Exchange%20%26%20Consultancy">✉ <span>Contact Us</span></a>
-      </nav>
-    </div>
-  </header>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="#home" aria-label="Vedanta Exchange and Consultancy home"><span class="brand-mark">V</span><span class="brand-copy"><strong>Vedanta</strong><small>EXCHANGE &amp; CONSULTANCY</small></span></a>
+<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+<nav id="site-nav" class="site-nav" aria-label="Main navigation">
+<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+<a class="nav-cta" href="mailto:vedanta.tnc@gmail.com?subject=Enquiry%20for%20Vedanta%20Exchange%20%26%20Consultancy">✉ <span>Contact Us</span></a>
+</nav></div></header>
 
-  <main id="main">
-    <section id="home" class="hero">
-      <div class="hero-image" aria-hidden="true"><div class="sun"></div><div class="crane crane-one"><i></i><b></b></div><div class="crane crane-two"><i></i><b></b></div><div class="ship"><div class="ship-bridge"></div><div class="containers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="hull"></div></div><div class="water"></div></div>
-      <div class="container hero-content">
-        <p class="eyebrow">TECHNICAL CONSULTANCY <span>•</span> TRADING</p>
-        <h1>Practical expertise.<br><em>Reliable business.</em></h1>
-        <p class="hero-lede">Vedanta Exchange &amp; Consultancy provides practical technical consultancy and trading solutions to help businesses grow, operate efficiently and achieve long-term success.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#services">Our Services <span>→</span></a><a class="button button-outline" href="#contact">Get in Touch</a></div>
-        <div class="hero-note"><span class="note-dot"></span> Based in Kerala, India · Working with business partners</div>
-      </div>
-    </section>
+<main id="main">
+<section id="home" class="hero"><div class="hero-image" aria-hidden="true"></div><div class="container hero-content">
+<p class="eyebrow">TECHNICAL CONSULTANCY <span>•</span> TRADING</p>
+<h1>Practical expertise.<br><em>Reliable business.</em></h1>
+<p class="hero-lede">Vedanta Exchange &amp; Consultancy provides practical technical consultancy and trading solutions to help businesses grow, operate efficiently and achieve long-term success.</p>
+<div class="hero-actions"><a class="button button-primary" href="#services">Our Services <span>→</span></a><a class="button button-outline" href="#contact">Get in Touch</a></div>
+<div class="hero-note"><span class="note-dot"></span> Based in Kerala, India · Working with business partners</div>
+</div></section>
 
-    <section id="about" class="section about-section">
-      <div class="container about-grid">
-        <div class="about-copy"><p class="eyebrow eyebrow-dark">ABOUT US</p><h2>Your partner in<br>technical &amp; trading solutions</h2><p>Vedanta Exchange &amp; Consultancy is a Kerala, India based business offering technical consultancy and trading services. We work closely with clients to understand their needs and deliver practical, reliable and cost-conscious solutions across a range of industries.</p>
-          <div class="value-points"><div><span class="line-icon">♧</span><span>Client-focused<br>approach</span></div><div><span class="line-icon">◇</span><span>Integrity &amp;<br>reliability</span></div><div><span class="line-icon">◎</span><span>Result-driven<br>solutions</span></div></div>
-        </div>
-        <div class="engineering-visual" role="img" aria-label="Technical planning desk with blueprint and engineering equipment"><div class="window-grid"></div><div class="blueprint"><div class="blueprint-lines"></div><div class="ruler"></div></div><div class="helmet"><div class="helmet-dome"></div><div class="helmet-brim"></div><div class="helmet-ridge"></div></div><div class="laptop"><div></div></div><div class="pen"></div></div>
-      </div>
-    </section>
+<section id="about" class="section about-section"><div class="container about-grid"><div class="about-copy">
+<p class="eyebrow eyebrow-dark">ABOUT US</p><h2>Your partner in<br>technical &amp; trading solutions</h2>
+<p><strong>Vedanta Exchange &amp; Consultancy</strong> is a professionally driven organization bringing together experienced expertise in <strong>technical maintenance, project management, market research and global procurement</strong>.</p>
+<p>Our team combines extensive industry experience with a practical understanding of technical and commercial requirements. We support clients across the entire project and procurement lifecycle—from identifying requirements and sourcing reliable solutions to coordinating execution and delivering dependable outcomes.</p>
+<p>With a strong focus on <strong>technical excellence, operational efficiency, strategic sourcing, and professional service</strong>, we work with trusted partners and suppliers to deliver solutions that meet demanding quality, cost, and performance expectations.</p>
+<p>At Vedanta, we believe in building <strong>long-term partnerships based on integrity, expertise, responsiveness, and results</strong>. Our objective is simple: to provide our clients with dependable technical and procurement solutions that create lasting business value.</p>
+<div class="value-points"><div><span class="line-icon">♧</span><span>Client-focused<br>approach</span></div><div><span class="line-icon">◇</span><span>Integrity &amp;<br>reliability</span></div><div><span class="line-icon">◎</span><span>Result-driven<br>solutions</span></div></div>
+</div><div class="engineering-visual" role="img" aria-label="Technical planning desk with blueprint and engineering equipment"><div class="window-grid"></div><div class="blueprint"><div class="blueprint-lines"></div><div class="ruler"></div></div><div class="helmet"><div class="helmet-dome"></div><div class="helmet-brim"></div><div class="helmet-ridge"></div></div><div class="laptop"><div></div></div><div class="pen"></div></div></div></section>
 
-    <section id="services" class="section premium-services">
-      <div class="premium-services-banner">
-        <div class="premium-services-banner-image" aria-hidden="true"></div>
-        <div class="container premium-services-banner-content">
-          <div>
-            <p class="eyebrow">OUR SERVICES</p>
-            <h2>What <em>we do</em></h2>
-            <p>Practical support to help your business move forward.</p>
-          </div>
-        </div>
-      </div>
-      <div class="container premium-services-body">
-        <div class="premium-services-topline"><span></span><a href="#contact">Discuss your requirements <b>→</b></a></div>
-        <div class="premium-service-grid">
-          <article class="premium-service-card">
-            <div class="premium-service-copy"><div class="premium-service-icon">⚙</div><div><h3>Technical Consultancy</h3><span class="premium-rule"></span><p>Technical planning, project coordination, feasibility reviews, process improvement and operational efficiency.</p><a href="#contact">Learn more <b>→</b></a></div></div>
-            <img src="services-assets/technical.jpg" alt="Technical professional reviewing industrial equipment">
-          </article>
-          <article class="premium-service-card">
-            <div class="premium-service-copy"><div class="premium-service-icon">◇</div><div><h3>Trading &amp; Sourcing</h3><span class="premium-rule"></span><p>Product sourcing and trading support, supplier coordination, commercial comparison and dependable delivery.</p><a href="#trading">Learn more <b>→</b></a></div></div>
-            <img src="services-assets/trading.jpg" alt="Business partners discussing a sourcing opportunity">
-          </article>
-          <article class="premium-service-card">
-            <div class="premium-service-copy"><div class="premium-service-icon">◎</div><div><h3>Import &amp; Export Support</h3><span class="premium-rule"></span><p>International sourcing, supplier and buyer liaison, documentation, commercial coordination and shipping logistics.</p><a href="#contact">Learn more <b>→</b></a></div></div>
-            <img src="services-assets/import-export.jpg" alt="International cargo transport by ship, truck and aircraft">
-          </article>
-          <article class="premium-service-card premium-service-wide">
-            <div class="premium-service-copy"><div class="premium-service-icon">▥</div><div><h3>Market Research &amp; Business Support</h3><span class="premium-rule"></span><p>Market and product research, supplier intelligence, product availability and pricing research, opportunity identification and technical-commercial analysis.</p><a href="#contact">Learn more <b>→</b></a></div></div>
-            <img src="services-assets/market-research-clean.jpg" alt="Market research dashboard and business analysis">
-          </article>
-          <article class="premium-service-card premium-service-wide">
-            <div class="premium-service-copy"><div class="premium-service-icon">✓</div><div><h3>Project Support</h3><span class="premium-rule"></span><p>Project requirements and coordination, supplier and stakeholder coordination, planned maintenance, maintenance service coordination and follow-up.</p><a href="#contact">Learn more <b>→</b></a></div></div>
-            <img src="services-assets/project-support-clean.jpg" alt="Technical professional supporting industrial project activities">
-          </article>
-        </div>
-        <div class="premium-service-values"><div><b>✓</b>Reliable Support</div><i></i><div><b>◇</b>Trusted Partnerships</div><i></i><div><b>◎</b>Global Reach</div><i></i><div><b>⌁</b>Sustainable Growth</div></div>
-      </div>
-    </section>
+<section id="services" class="section premium-services"><div class="premium-services-banner"><div class="premium-services-banner-image" aria-hidden="true"></div><div class="container premium-services-banner-content"><div><p class="eyebrow">OUR SERVICES</p><h2>What <em>we do</em></h2><p>Practical support to help your business move forward.</p></div></div></div>
+<div class="container premium-services-body"><div class="premium-services-topline"><span></span><a href="#contact">Discuss your requirements <b>→</b></a></div>
+<div class="premium-service-grid">
+<article class="premium-service-card"><div class="premium-service-copy"><div class="premium-service-icon">⚙</div><div><h3>Technical Consultancy</h3><span class="premium-rule"></span><p>Technical planning, project coordination, feasibility reviews, process improvement and operational efficiency.</p><a href="#contact">Learn more <b>→</b></a></div></div><img src="services-assets/technical.jpg" alt="Technical professional reviewing industrial equipment"></article>
+<article class="premium-service-card"><div class="premium-service-copy"><div class="premium-service-icon">◇</div><div><h3>Trading &amp; Sourcing</h3><span class="premium-rule"></span><p>Product sourcing and trading support, supplier coordination, commercial comparison and dependable delivery.</p><a href="#contact">Learn more <b>→</b></a></div></div><img src="services-assets/trading.jpg" alt="Business partners discussing a sourcing opportunity"></article>
+<article class="premium-service-card"><div class="premium-service-copy"><div class="premium-service-icon">◎</div><div><h3>Import &amp; Export Support</h3><span class="premium-rule"></span><p>International sourcing, supplier and buyer liaison, documentation, commercial coordination and shipping logistics.</p><a href="#contact">Learn more <b>→</b></a></div></div><img src="services-assets/import-export.jpg" alt="International cargo transport"></article>
+<article class="premium-service-card premium-service-wide"><div class="premium-service-copy"><div class="premium-service-icon">▥</div><div><h3>Market Research &amp; Business Support</h3><span class="premium-rule"></span><p>Market and product research, supplier intelligence, product availability and pricing research, opportunity identification and technical-commercial analysis.</p><a href="#contact">Learn more <b>→</b></a></div></div><img src="services-assets/market-research-clean.jpg" alt="Market research dashboard and business analysis"></article>
+<article class="premium-service-card premium-service-wide"><div class="premium-service-copy"><div class="premium-service-icon">✓</div><div><h3>Project Support</h3><span class="premium-rule"></span><p>Project requirements and coordination, supplier and stakeholder coordination, planned maintenance, maintenance service coordination and follow-up.</p><a href="#contact">Learn more <b>→</b></a></div></div><img src="services-assets/project-support-clean.jpg" alt="Technical professional supporting industrial project activities"></article>
+</div>
+<div class="premium-service-values"><div><b>✓</b>Reliable Support</div><i></i><div><b>◇</b>Trusted Partnerships</div><i></i><div><b>◎</b>Global Reach</div><i></i><div><b>⌁</b>Sustainable Growth</div></div></div></section>
 
-    <section id="trading" class="section trading-section">
-      <div class="container trading-grid"><div class="port-visual" role="img" aria-label="Stylized cargo vessel and port at sunset"><div class="port-sun"></div><div class="port-crane"></div><div class="port-ship"><span></span><span></span><span></span><b></b></div><div class="port-water"></div></div>
-        <div class="trading-copy"><p class="eyebrow eyebrow-dark">TRADING &amp; SOURCING</p><h2>Connecting needs<br>with reliable supply</h2><p>We aim to build practical, long-term business relationships through responsive communication, thoughtful sourcing and a focus on fit-for-purpose solutions.</p><div class="industry-grid"><div><span>⚓</span><small>Marine &amp;<br>shipping</small></div><div><span>⚙</span><small>Industrial<br>equipment</small></div><div><span>ϟ</span><small>Energy &amp;<br>resources</small></div><div><span>▦</span><small>Construction &amp;<br>infrastructure</small></div><div><span>◇</span><small>General<br>trading</small></div></div></div>
-      </div>
-    </section>
+<section id="trading" class="section trading-section"><div class="container trading-grid"><div class="port-visual" role="img" aria-label="Stylized cargo vessel and port at sunset"><div class="port-sun"></div><div class="port-crane"></div><div class="port-ship"><span></span><span></span><span></span><b></b></div><div class="port-water"></div></div>
+<div class="trading-copy"><p class="eyebrow eyebrow-dark">TRADING &amp; SOURCING</p><h2>Connecting needs<br>with reliable supply</h2><p>We aim to build practical, long-term business relationships through responsive communication, thoughtful sourcing and a focus on fit-for-purpose solutions.</p><div class="industry-grid"><div><span>⚓</span><small>Marine &amp;<br>shipping</small></div><div><span>⚙</span><small>Industrial<br>equipment</small></div><div><span>ϟ</span><small>Energy &amp;<br>resources</small></div><div><span>▦</span><small>Construction &amp;<br>infrastructure</small></div><div><span>◇</span><small>General<br>trading</small></div></div></div></div></section>
 
-    <section id="approach" class="section approach-section"><div class="container approach-grid"><div><p class="eyebrow eyebrow-dark">OUR APPROACH</p><h2>Built on trust.<br>Focused on outcomes.</h2><p>We listen first, clarify requirements and work toward solutions that are realistic, transparent and aligned with your business objectives.</p></div><div class="approach-cards"><article><span>01</span><h3>Understand</h3><p>We take time to understand the need, constraints and desired outcome.</p></article><article><span>02</span><h3>Coordinate</h3><p>We communicate clearly and keep the details moving forward.</p></article><article><span>03</span><h3>Deliver</h3><p>We focus on useful results, accountability and long-term relationships.</p></article></div></div></section>
+<section id="approach" class="section approach-section"><div class="container approach-grid"><div><p class="eyebrow eyebrow-dark">OUR APPROACH</p><h2>Built on trust.<br>Focused on outcomes.</h2><p>We listen first, clarify requirements and work toward solutions that are realistic, transparent and aligned with your business objectives.</p></div><div class="approach-cards"><article><span>01</span><h3>Understand</h3><p>We take time to understand the need, constraints and desired outcome.</p></article><article><span>02</span><h3>Coordinate</h3><p>We communicate clearly and keep the details moving forward.</p></article><article><span>03</span><h3>Deliver</h3><p>We focus on useful results, accountability and long-term relationships.</p></article></div></div></section>
 
-    <section id="contact" class="contact-section"><div class="container contact-grid"><div><p class="eyebrow">GET IN TOUCH</p><h2>Let’s work together.</h2><p>Have a project, need a product, or want to discuss a partnership? We’d be glad to hear from you.</p></div><div class="contact-details"><div><span class="contact-symbol">✉</span><p><small>Email</small><a href="mailto:vedanta.tnc@gmail.com">vedanta.tnc@gmail.com</a></p></div><div><span class="contact-symbol">⌖</span><p><small>Location</small><strong>Kerala, India</strong></p></div></div><a class="button button-primary contact-button" href="mailto:vedanta.tnc@gmail.com?subject=Business%20Enquiry">Send a Message <span>→</span></a></div></section>
-  </main>
+<section id="contact" class="contact-section"><div class="container contact-grid"><div><p class="eyebrow">GET IN TOUCH</p><h2>Let’s work together.</h2><p>Have a project, need a product, or want to discuss a partnership? We’d be glad to hear from you.</p></div>
+<div class="contact-details"><div><span class="contact-symbol">✉</span><p><small>Email</small><a href="mailto:vedanta.tnc@gmail.com">vedanta.tnc@gmail.com</a></p></div><div><span class="contact-symbol">⌖</span><p><small>Address</small><strong>No. 17/149, Perungala, Kayamkulam, Alleppey, Kerala - 690559, INDIA</strong></p></div><div><span class="contact-symbol">▣</span><p><small>GSTIN</small><strong>32DORPR6313M1ZD</strong></p></div></div>
+<a class="button button-primary contact-button" href="mailto:vedanta.tnc@gmail.com?subject=Business%20Enquiry">Send a Message <span>→</span></a></div></section>
+</main>
 
-  <footer class="site-footer"><div class="container footer-top"><a class="brand brand-footer" href="#home"><span class="brand-mark">V</span><span class="brand-copy"><strong>Vedanta</strong><small>EXCHANGE &amp; CONSULTANCY</small></span></a><p>Technical Consultancy <span>•</span> Trading<br><small>Kerala, India</small></p><nav aria-label="Footer navigation"><a href="#about">About</a><a href="#services">Services</a><a href="#trading">Trading</a><a href="#contact">Contact</a></nav></div><div class="container footer-bottom"><span>© <span id="year">2026</span> Vedanta Exchange &amp; Consultancy. All rights reserved.</span><span>Practical expertise. Reliable business.</span></div></footer>
-  <script src="script.js"></script>
+<footer class="site-footer"><div class="container footer-top"><a class="brand brand-footer" href="#home"><span class="brand-mark">V</span><span class="brand-copy"><strong>Vedanta</strong><small>EXCHANGE &amp; CONSULTANCY</small></span></a><p>Technical Consultancy <span>•</span> Trading<br><small>Kerala, India</small></p><nav aria-label="Footer navigation"><a href="#about">About</a><a href="#services">Services</a><a href="#trading">Trading</a><a href="#contact">Contact</a></nav></div><div class="container footer-bottom"><span>© <span id="year">2026</span> Vedanta Exchange &amp; Consultancy. All rights reserved.</span><span>Practical expertise. Reliable business.</span></div></footer>
+<script src="script.js"></script>
 </body>
 </html>
