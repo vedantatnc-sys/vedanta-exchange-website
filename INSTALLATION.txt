@@ -1,0 +1,40 @@
+VEDANTA WEBSITE — ADD A PRODUCTS PAGE AND SHOW IT IN THE MAIN NAVIGATION
+
+Package contents:
+- products.html (new standalone Products page)
+- assets/products-catalog.png (the approved product catalogue image)
+- assets/vedanta-tubular-battery.png (separate battery image, optional for future use)
+
+STEP 1 — Upload the new page and image
+1. Open: https://github.com/vedantatnc-sys/vedanta-exchange-website
+2. Click Add file > Upload files.
+3. Upload products.html and the assets folder with its image file(s). Keep products-catalog.png inside a folder named assets.
+4. Commit the upload to the main branch.
+
+STEP 2 — Add Products to the homepage navigation
+1. In GitHub, open index.html and click the pencil (Edit) icon.
+2. Find the main navigation line with links for Services and Approach.
+3. Add this link between those two links:
+   <a href="products.html">Products</a>
+   For example, change:
+   <a href="#services">Services</a><a href="#approach">Approach</a>
+   to:
+   <a href="#services">Services</a><a href="products.html">Products</a><a href="#approach">Approach</a>
+4. In the footer navigation, add:
+   <a href="products.html">Products</a>
+   beside the other footer links.
+5. Commit the changes.
+
+STEP 3 — Add Products to the Careers page navigation
+1. Open careers.html and click Edit.
+2. Add <a href="products.html">Products</a> between Services and Approach in its main navigation.
+3. Add <a href="products.html">Products</a> to its footer navigation too.
+4. Commit the changes.
+
+STEP 4 — Check the live page
+After GitHub Pages updates, visit:
+https://vedantatnc.com/products.html
+
+The Products page uses the approved catalogue image and includes an “Email Your Requirement” link to vedanta.tnc@gmail.com for products not shown on the page.
+
+Note: Do not upload the image into the repository root; keep it inside the assets folder so the page path works correctly.
